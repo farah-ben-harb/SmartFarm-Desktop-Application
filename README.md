@@ -1,4 +1,4 @@
-# Smart Farm – Desktop & Web App
+# Smart Farm – Desktop App
 
 **Smart Farm** est une application professionnelle destinée à la **gestion agricole**, développée en **C++ avec Qt** pour le desktop et le web, et intégrant des fonctionnalités automatisées via **Arduino**.  
 Le projet facilite le suivi des stocks, des ventes, des fournisseurs, des produits et des équipements tout en permettant l’automatisation de certaines tâches agricoles.
