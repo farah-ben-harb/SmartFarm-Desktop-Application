@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>affichage</class>
+ <widget class="QDialog" name="affichage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1123</width>
+    <height>648</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>60</y>
+     <width>941</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>modifier</string>
+   </property>
+   <widget class="QLineEdit" name="le_nom_modif">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>50</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="le_ad_mail_modif">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>180</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="le_num_modif">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>300</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>60</y>
+      <width>56</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>nom</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>190</y>
+      <width>56</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ad mail</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>250</y>
+      <width>56</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ad</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>310</y>
+      <width>56</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>numero</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_modif">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>240</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>choisir</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>tunis</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>bizerte</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ariana</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>manouba</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>bizerte</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>beja</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>jandouba</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kef</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kairaoun</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>tatouine</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>djerba</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>gabes</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>gafsa</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>gasrine</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sfax</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sousse</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>monsatir</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>nabeul</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kelibia</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>360</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>nom produit</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_produit_modif">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>360</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>choisir</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ble biologique</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>outils agricoles</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>semences</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>130</y>
+      <width>56</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>prenom</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="le_prenom_modif">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>130</y>
+      <width>113</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_enregistrer">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>390</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>enregistrer</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
