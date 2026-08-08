@@ -1,68 +1,59 @@
-# Smart Farm – Desktop App
+# SmartFarm Desktop Application
 
-**Smart Farm** est une application professionnelle destinée à la **gestion agricole**, développée en **C++ avec Qt** pour le desktop et le web, et intégrant des fonctionnalités automatisées via **Arduino**.  
-Le projet facilite le suivi des stocks, des ventes, des fournisseurs, des produits et des équipements tout en permettant l’automatisation de certaines tâches agricoles.
+SmartFarm is a desktop application for agricultural management built with C++ and Qt, with Arduino integration for basic automation workflows.
 
----
+## Overview
 
-## Table des matières
-- [Description](#description)
-- [Fonctionnalités](#fonctionnalités)
-- [Technologies utilisées](#technologies-utilisées)
-- [Exemple Arduino : LED Clignotante](#exemple-arduino--led-clignotante)
-- [Installation](#installation)
-- [Contribution](#contribution)
-- [Auteur](#auteur)
+The project is designed to help manage:
 
----
+- stock
+- sales
+- suppliers
+- products
+- equipment
+- simple automation scenarios
 
-## Description
-Smart Farm combine la puissance de **Qt/C++** pour une interface desktop/web moderne et réactive avec des **interactions matérielles Arduino** pour automatiser des dispositifs agricoles simples.  
-L’objectif : améliorer la productivité et la gestion quotidienne des fermes en centralisant toutes les informations et en facilitant l’automatisation.
+## Tech Stack
 
----
+- C++
+- Qt
+- Arduino
 
-## Fonctionnalités
-- Gestion des **produits agricoles**  
-- Suivi des **stocks** et des **ventes**  
-- Gestion des **fournisseurs** et des **équipements**  
-- Interface **desktop et web** intuitive  
-- **Automatisation Arduino**, ex : signalisation via LED clignotante  
+## Project Structure
 
----
+- `main.cpp` application entry point
+- `mainwindow.*` main UI logic
+- `gestion_fournisseurs.*` supplier management
+- `fournisseur.*` supplier model and helpers
+- `affichage.*` display views
+- `evenement.*` event management
+- `connexion.*` connection logic
+- `suppevent.*` and `modifevent.*` event actions
 
-## Technologies utilisées
-- **C++** – langage principal  
-- **Qt Framework** – GUI desktop et web  
-- **Arduino** – microcontrôleur pour automatisation  
-- **Git & GitHub** – gestion de version  
+## Features
 
----
+- Product and stock management
+- Sales and supplier tracking
+- GUI built with Qt Designer
+- Arduino-based automation examples
+- Agricultural event management
 
-## Exemple Arduino : LED Clignotante
+## Getting Started
 
-### Matériel nécessaire
-- Arduino Uno  
-- LED  
-- Résistance 220 Ω  
-- Fils Dupont  
+1. Open `Integration.pro` in Qt Creator.
+2. Configure the Qt kit and compiler for your system.
+3. Build the project.
+4. Run the application and verify the relevant UI screens.
 
-### Connexions
-1. Connectez la résistance à l’une des broches de la LED.  
-2. Connectez l’autre extrémité à la broche **GND** de l’Arduino.  
-3. Connectez l’anode de la LED (broche longue) à la broche **13** de l’Arduino.  
+## Branching and Commits
 
-### Code Arduino
-```cpp
-const int ledPin = 13; // Broche de la LED
+- Use branches such as `feat/<area>`, `fix/<area>`, `docs/<area>`, or `ui/<area>`
+- Keep commits focused on one UI or data model change
+- Prefer Conventional Commits such as `feat(farm): add supplier search dialog`
+- Avoid vague messages like `update`, `final`, or `test`
 
-void setup() {
-  pinMode(ledPin, OUTPUT); // Définit la broche comme sortie
-}
+## Contributing
 
-void loop() {
-  digitalWrite(ledPin, HIGH); // Allume la LED
-  delay(1000); // Attend 1 seconde
-  digitalWrite(ledPin, LOW);  // Éteint la LED
-  delay(1000); // Attend 1 seconde
-}
+- Keep UI and hardware changes easy to review
+- Document any Arduino wiring assumption or hardware dependency
+- Avoid committing generated binaries or local build output
